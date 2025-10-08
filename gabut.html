@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 12 TKJ</title>
+    <link rel="stylesheet" href="desain.css">
+</head>
+<body>
+    <header>
+        <h1>12 TKJ</h1>
+        <p>Web karya anak kelas 12 TKJ</p>
+        <p class="subtitle">Tahun Ajaran 2023-2026 part of SMK Muhammadiyah 7 Gondanglegi</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><strong><a href="#galeri">Galeri Foto</a></strong></li>
+            <li><strong><a href="#pesan">Pesan</a></strong></li>
+            <li><strong><a href="#timeline">Timeline</a></strong></li>
+            <li><strong><a href="#kontak">Kontak</a></strong></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="galeri">
+            <h2>Galeri Foto</h2>
+            <p>Beberapa momen dari kelas kita.</p>
+            <div class="gallery">
+                <img src="./foto/iedadha.jpeg" alt="Foto iedadha" onclick="openModal(this.src)">
+                <img src="./foto/batikday.jpeg" alt="Foto Batikday" onclick="openModal(this.src)">
+                <img src="./foto/TKJboys.jpeg" alt="TKJ boys" onclick="openModal(this.src)">
+                <img src="./foto/TKJgirls.jpeg" alt="TKJ girls" onclick="openModal(this.src)">
+                <img src="./foto/TINO.jpeg" alt="TKJ Leaders" onclick="openModal(this.src)">
+                <img src="./foto/kls10.jpeg" alt="Kelas 10" onclick="openModal(this.src)">
+                <img src="./foto/wahyu.jpeg" alt="Kelas 10" onclick="openModal(this.src)">
+                <img src="./foto/tino2.jpeg" alt="Kelas 10" onclick="openModal(this.src)">
+                <img src="./foto/tino3.jpeg" alt="Kelas 10" onclick="openModal(this.src)">
+                <img src="./foto/iduladha2.jpeg" alt="Kelas 10" onclick="openModal(this.src)">
+                <img src="./foto/surya.jpeg" alt="Kelas 10" onclick="openModal(this.src)">
+                <img src="./foto/elvinturu.jpeg" alt="Kelas 10" onclick="openModal(this.src)">
+                <img src="./foto/aconk.jpeg" alt="Kelas 10" onclick="openModal(this.src)">
+                <img src="./foto/arifturu.jpeg" alt="Kelas 10" onclick="openModal(this.src)">
+                <img src="./foto/fotosholat.jpeg" alt="Kelas 10" onclick="openModal(this.src)">
+            </div>
+        </section>
+
+        <section id="pesan">
+            <h2>Pesan buat kelas 12 TKJ</h2>
+            <p>Bagi pesanmu di sini!</p>
+            <div id="pesan-list">
+                <div class="pesan-item">
+                    <strong>Ihsan:</strong> Kelass josjisss. Semangat terus, teman-teman!
+                </div>
+                <div class="pesan-item">
+                    <strong>Yan:</strong> Jangan lupa sama temen sendiri 
+            </div>
+            <form id="form-pesan">  
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" required>
+                <label for="pesan-text">Pesan:</label>
+                <textarea id="pesan-text" rows="3" required></textarea>
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </section>
+
+        <section id="timeline">
+            <h2>Timeline Kelas</h2>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <h3>Juli 2023</h3>
+                    <p>Pertemuan pertama kelas 10 TKJ. Semangat baru!</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>September 2024</h3>
+                    <p>Jalan jalan sekelas ke pantai, masak masak seru bangett!</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>April 2026</h3>
+                    <p>Ujian akhir. Doa terbaik untuk semua.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Mei 2026</h3>
+                    <p>Wisuda dan perpisahan. Sampai jumpa lagi!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontak">
+            <h2>Kontak & info</h2>
+            <p>Untuk info update, hubungi:</p>
+            <ul>
+                <li><strong>Ketua Kelas:</strong> Tino - 0838-2481-6738</li>
+                <li><strong>IG kelas:</strong> @tkjmutu23</li>
+                <li><strong>Link IG kelas:</strong> <a href="https://www.instagram.com/tkjmutu23?igsh=dTI0YnFjNXlyMTVw">Klik</a></li>
+            </ul>
+            <form>
+                <label for="email">Email Anda:</label>
+                <input type="email" id="email" required>
+                <label for="saran">Saran untuk 12 TKJ:</label>
+                <textarea id="saran" rows="3"></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Modal untuk galeri foto -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Kenang Kenangan Kelas 12 TKJ. Dibuat untuk kenangan abadi. </p>
+    </footer>
+
+    <script src="gabut.js"></script>
+</body>
+</html>
